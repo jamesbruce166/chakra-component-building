@@ -48,6 +48,18 @@ export default function Cards() {
 							View Product Card
 						</Button>
 					</Box>
+					<Box h='70px'>
+						<Text marginBottom='2%' fontSize='2xl'>
+							Share Card
+						</Text>
+						<Button
+							colorScheme='teal'
+							variant='link'
+							onClick={() => router.push('/cards/share')}
+						>
+							View Share Card
+						</Button>
+					</Box>
 				</VStack>
 			</Container>
 		</>

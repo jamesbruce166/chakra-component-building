@@ -12,7 +12,7 @@ import {
 
 function RegistrationForm() {
 	return (
-		<VStack spacing='35px' width='40%'>
+		<VStack spacing='35px'>
 			<FormControl id='email' isRequired>
 				<FormLabel>Email address</FormLabel>
 				<Input type='email' />

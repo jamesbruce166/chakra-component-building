@@ -41,7 +41,6 @@ export default function Home() {
 							Browse Forms
 						</Button>
 					</Box>
-
 					<Box h='70px'>
 						<Text marginBottom='2%' fontSize='2xl'>
 							Tables
@@ -52,6 +51,30 @@ export default function Home() {
 							onClick={() => router.push('/tables')}
 						>
 							Browse Tables
+						</Button>
+					</Box>
+					<Box h='70px'>
+						<Text marginBottom='2%' fontSize='2xl'>
+							Card Designs
+						</Text>
+						<Button
+							colorScheme='teal'
+							variant='link'
+							onClick={() => router.push('/cards')}
+						>
+							Browse Cards
+						</Button>
+					</Box>
+					<Box h='70px'>
+						<Text marginBottom='2%' fontSize='2xl'>
+							Full Page Layouts
+						</Text>
+						<Button
+							colorScheme='teal'
+							variant='link'
+							onClick={() => router.push('/pages')}
+						>
+							Browse Pages
 						</Button>
 					</Box>
 				</VStack>

@@ -48,6 +48,18 @@ export default function Forms() {
 							Go To Login Form
 						</Button>
 					</Box>
+					<Box h='70px'>
+						<Text marginBottom='2%' fontSize='2xl'>
+							Contact Us Form
+						</Text>
+						<Button
+							colorScheme='teal'
+							variant='link'
+							onClick={() => router.push('/forms/contact')}
+						>
+							Go To Contact Form
+						</Button>
+					</Box>
 				</VStack>
 			</Container>
 		</>

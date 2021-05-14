@@ -7,20 +7,15 @@ import {
 	Box,
 	Button,
 	Text,
-	useColorMode,
 } from '@chakra-ui/react';
 
-export default function Home() {
+export default function Forms() {
 	const router = useRouter();
-	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
 		<>
 			<Heading textAlign='center' paddingTop='5%' as='h1' size='2xl'>
-				Chakra Component Building <br />
-				<Button onClick={toggleColorMode}>
-					Enable {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-				</Button>
+				Forms
 			</Heading>
 
 			<Container paddingTop='10%'>
@@ -31,27 +26,26 @@ export default function Home() {
 				>
 					<Box h='70px'>
 						<Text marginBottom='2%' fontSize='2xl'>
-							Forms
+							Register Form
 						</Text>
 						<Button
 							colorScheme='teal'
 							variant='link'
-							onClick={() => router.push('/forms')}
+							onClick={() => router.push('/forms/register')}
 						>
-							Browse Forms
+							Go To Register Form
 						</Button>
 					</Box>
-
 					<Box h='70px'>
 						<Text marginBottom='2%' fontSize='2xl'>
-							Tables
+							Login Form
 						</Text>
 						<Button
 							colorScheme='teal'
 							variant='link'
-							onClick={() => router.push('/tables')}
+							onClick={() => router.push('/forms/login')}
 						>
-							Browse Tables
+							Go To Login Form
 						</Button>
 					</Box>
 				</VStack>

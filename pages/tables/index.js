@@ -7,20 +7,15 @@ import {
 	Box,
 	Button,
 	Text,
-	useColorMode,
 } from '@chakra-ui/react';
 
-export default function Home() {
+export default function Tables() {
 	const router = useRouter();
-	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
 		<>
 			<Heading textAlign='center' paddingTop='5%' as='h1' size='2xl'>
-				Chakra Component Building <br />
-				<Button onClick={toggleColorMode}>
-					Enable {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-				</Button>
+				Tables
 			</Heading>
 
 			<Container paddingTop='10%'>
@@ -31,27 +26,26 @@ export default function Home() {
 				>
 					<Box h='70px'>
 						<Text marginBottom='2%' fontSize='2xl'>
-							Forms
+							Simple Table
 						</Text>
 						<Button
 							colorScheme='teal'
 							variant='link'
-							onClick={() => router.push('/forms')}
+							onClick={() => router.push('/tables/table')}
 						>
-							Browse Forms
+							Go To Simple Table
 						</Button>
 					</Box>
-
 					<Box h='70px'>
 						<Text marginBottom='2%' fontSize='2xl'>
-							Tables
+							Coloured Table
 						</Text>
 						<Button
 							colorScheme='teal'
 							variant='link'
-							onClick={() => router.push('/tables')}
+							onClick={() => router.push('/tables/coloured')}
 						>
-							Browse Tables
+							Go To Coloured Table
 						</Button>
 					</Box>
 				</VStack>

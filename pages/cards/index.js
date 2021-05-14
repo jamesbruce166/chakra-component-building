@@ -36,6 +36,18 @@ export default function Cards() {
 							View Profile Card
 						</Button>
 					</Box>
+					<Box h='70px'>
+						<Text marginBottom='2%' fontSize='2xl'>
+							Product Card
+						</Text>
+						<Button
+							colorScheme='teal'
+							variant='link'
+							onClick={() => router.push('/cards/product')}
+						>
+							View Product Card
+						</Button>
+					</Box>
 				</VStack>
 			</Container>
 		</>
